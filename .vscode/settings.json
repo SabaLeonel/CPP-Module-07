@@ -113,6 +113,17 @@
     "unordered_map": "cpp",
     "variant": "cpp",
     "vector": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "utility": "cpp",
+    "memory": "c",
+    "__nullptr": "c",
+    "*.tpp": "cpp",
+    "chrono": "cpp",
+    "functional": "cpp",
+    "iterator": "cpp",
+    "__functional_base": "cpp",
+    "__functional_base_03": "cpp",
+    "__tuple": "cpp",
+    "type_traits": "cpp"
   }
 }

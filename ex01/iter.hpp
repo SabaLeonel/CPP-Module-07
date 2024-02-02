@@ -2,28 +2,20 @@
 # define ITER_HPP
 
 
+#include <iostream>
+
 template <typename T>
-void swap(T &a, T &b)
+void iter(T *array, size_t length, void (*f)(T const &))
 {
-    T tmp = a;
-    a = b;
-    b = tmp;
+    for (size_t i = 0; i < length; i++)
+        f(array[i]);
 }
 
 template <typename T>
-T min(T &a, T &b)
+void print(T const &x)
 {
-    return (a < b ? a : b);
+    std::cout << x << std::endl;
 }
-
-template <typename T>
-T max(T &a, T &b)
-{
-    return (a > b ? a : b);
-}
-
-
-
 
 
 #endif
